@@ -1,0 +1,21 @@
+Home Activity:
+added content description to the recycler view.
+added content description to the floating action button.
+
+
+ToDoList Activity:
+added content description to the recycler view.
+added content description to the floating action button.
+
+Add List Item Dialog Box:
+gave the priority radio buttons a content description
+
+Edit List Item Dialog Box:
+gave the priority radio buttons a content description
+
+ToDoList Activity Recycler Item:
+added content description to the checkbox
+added content description to the edit item button
+
+when an item is selected, an edit item button pops up. I added the same onclicklistener to the item itself once it has already been clicked once.
+This way, the user can edit the item without having to race the pop-up button that disappears after only a few seconds.

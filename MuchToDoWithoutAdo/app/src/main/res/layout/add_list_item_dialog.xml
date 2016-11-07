@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/home_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Item"
+        android:textSize="28dp"
+        android:gravity="center"
+        android:layout_marginTop="18dp"
+        android:textColor="@color/colorAccent"
+        />
+    <EditText
+        android:id="@+id/new_todo"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:hint="ToDo"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/home_dialog_title"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/details"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:hint="Details"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/new_todo"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/prority_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="priority level"
+        android:layout_below="@id/details"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/prority_level">
+        <RadioButton
+            android:id="@+id/low_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="56dp"
+            android:buttonTint="#454545"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginBottom="26dp"
+            android:contentDescription="low priority"/>
+        <RadioButton
+            android:id="@+id/medium_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:buttonTint="#d69902"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="26dp"
+            android:contentDescription="medium priority"/>
+        <RadioButton
+            android:id="@+id/high_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="high priority"
+            android:layout_marginRight="56dp"
+            android:buttonTint="#c30000"
+            android:layout_marginBottom="26dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
