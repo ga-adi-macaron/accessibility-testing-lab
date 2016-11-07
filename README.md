@@ -1,23 +1,32 @@
----
-title: Testing app for accessibility
-type: lesson
-duration: "1:25"
-creator: Drew Mahrt (NYC)
----
+# Accessibility fix required
+####Change the value of color accent to e4004c for greater contrast
 
+##Main Page
 
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Testing app for accessibility
+###Welcome Page
+-RecyclerView need to add item label to let the user know what it is listing
+-Floating action button need to have a label to indicate what the button is for 
 
-This lab is focused on making sure your apps follow accessibility guidelines. You will analyze your project 1 app, identify any accessibility issues, and fix those gaps. Use the skills you learned in the lesson to determine what needs to change in your app.
+###Dialog for Main List input
+-Increase the height of edit text and increase touch target
+-Increase the text contrast for the editText, button1(Confirm) and button2(Cancel)
 
-## Exercise
+###List item for main list
+- Increase the height of individual list and add a label to it
+- Increase the size of remove icon and add a label to it
+- Add a description to individual list to prompt user that they could add item to that list
 
-#### Requirements  
+##Detail Page
+-RecyclerView need to add item label to let the user know what it is listing
+-Floating action button need to have a label to indicate what the button is for 
 
-* Identify and list accessibility changes that need to be made
-* Fix the issues you identified in your project 1 code
+###Dialog for Main List input
+-Increase the height of edit text for title and detail
+-Increase touch target of both edit text
+-Increase the text contrast for the editText, button1(Confirm) and button2(Cancel)
 
-#### Deliverable
-
-- A document containing the identified issues
-- An improved version of your app that meets accessibility guidelines.
+###List item for main list
+- Increase the height of individual list and add a label to it
+- Increase the size of remove icon and edit icon
+- Add a label to both the icon
+- Add a description to individual list to prompt user that they could mark the item as done by clicking on it
