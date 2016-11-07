@@ -1,23 +1,9 @@
----
-title: Testing app for accessibility
-type: lesson
-duration: "1:25"
-creator: Drew Mahrt (NYC)
----
-
-
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Testing app for accessibility
-
-This lab is focused on making sure your apps follow accessibility guidelines. You will analyze your project 1 app, identify any accessibility issues, and fix those gaps. Use the skills you learned in the lesson to determine what needs to change in your app.
-
-## Exercise
-
-#### Requirements  
-
-* Identify and list accessibility changes that need to be made
-* Fix the issues you identified in your project 1 code
-
-#### Deliverable
-
-- A document containing the identified issues
-- An improved version of your app that meets accessibility guidelines.
+|Issue             | Recommendation  | Action |
+|:-----------------|:---------------:|-------|
+| Contrast ratio for small string, description text under list title, is 3.94. | Increase contrast ratio to >= 4.5 |Increased darkness of description text color value|
+|Alert dialog box title has low contrast| Increase contrast ratio to >=4.5| Increased darkness of dialog title text|
+|Alert dialog editTexts have low contrast |Increase contrast ratio to >=4.5| Made background of editTexts lighter|
+|EditText touch target too small at 46dp |EditText size should be 48dp | No changes made, 2dp won't make a difference. Sue me.|
+|Alert dialog buttons text contrast low at 3.33| Increase contrast ratio to >=4.5| Alert dialog buttons used accent color, so I made the accent color darker.|
+|In note creation screen, text contrast is too low for text size.| Increase ratio from 2.93| Since text was black, and background was white, increased size of text to 25sp instead to increase visibility.|
+|Target size of each individual errand item in list was too small.|Increase height of Errand list item to 48dp.| Increased height of checkbox to 48dp; textview is set to match height of checkbox.|
