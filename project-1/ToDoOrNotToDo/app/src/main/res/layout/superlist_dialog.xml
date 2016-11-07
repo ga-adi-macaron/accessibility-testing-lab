@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:background="#8f45e7a9"
+    android:paddingBottom="20sp">
+
+    <TextView
+        android:id="@+id/alertTitle"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:text="New list Creation"
+        android:textColor="#01462c"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/titleInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alertTitle"
+        android:hint="name"
+        android:layout_margin="8sp"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:background="#fef2fcf1"/>
+
+    <EditText
+        android:id="@+id/descriptInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/titleInput"
+        android:layout_alignRight="@id/titleInput"
+        android:layout_marginTop="8sp"
+        android:paddingBottom="10sp"
+        android:paddingTop="10sp"
+        android:background="#fef2fcf1"
+        android:layout_below="@id/titleInput"
+        android:hint="description"/>
+
+
+</RelativeLayout>

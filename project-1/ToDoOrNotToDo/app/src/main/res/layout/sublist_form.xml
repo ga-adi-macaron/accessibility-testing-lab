@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/sublistLayout"
+    android:layout_margin="7sp">
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10sp"
+        />
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bluebg"
+        android:text="Test"
+        android:textSize="25sp"
+        android:layout_alignBottom="@id/checkbox"
+        android:layout_alignTop="@id/checkbox"
+        android:gravity="center_vertical"
+        android:paddingLeft="7sp"
+        android:layout_toLeftOf="@id/checkbox"
+        android:textColor="@color/text"/>
+
+</RelativeLayout>

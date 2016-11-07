@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sub_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="shuvalov.nikita.todoornottodo.SubListActivity">
+    <TextView
+        android:id="@+id/listnameview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="This"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:background="@color/bluebg"
+        android:textColor="@color/text"
+        android:layout_marginBottom="15sp"/>
+    <Button
+        android:id="@+id/additem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add new\nErrand"
+        android:layout_below="@id/listnameview"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16sp"/>
+    <Button
+        android:id="@+id/backButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listnameview"
+        android:text="Return\n to lists"
+        android:layout_marginLeft="16sp"/>
+    <Button
+        android:id="@+id/removebutt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/additem"
+        android:layout_centerHorizontal="true"
+        android:text="Remove \n completed"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/errandRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/additem"
+        android:layout_alignLeft="@id/backButt"
+        android:layout_marginTop="10sp"/>
+
+
+</RelativeLayout>
