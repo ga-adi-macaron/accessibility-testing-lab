@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffee58"
+>
+
+    <TextView
+        android:id="@+id/InsideTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List Number One"
+        android:textSize="40sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:background="#d50000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="12"
+        android:shadowColor="#000"
+        android:gravity="center"
+        android:textColor="#ffffff"/>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutButtons"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/InsideTextView">
+    <Button
+        android:id="@+id/BackButton"
+        android:background="#ffffff"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginRight="10dp"
+        android:text="Back"
+        android:fontFamily="sans-serif-condensed" />
+    <Button
+        android:id="@+id/insideAddItemButton"
+        android:background="#f06292"
+        android:layout_width="285dp"
+        android:layout_height="50dp"
+        android:text="Add an item"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:shadowColor="#ffffff"
+        android:shadowRadius="13"
+        android:shadowDy="0"
+        android:shadowDx="0"
+        android:fontFamily="sans-serif-condensed" />
+</LinearLayout>
+    <ListView
+        android:layout_marginTop="10dp"
+        android:id="@+id/InsideListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/LinearLayoutButtons"></ListView>
+
+
+</RelativeLayout>

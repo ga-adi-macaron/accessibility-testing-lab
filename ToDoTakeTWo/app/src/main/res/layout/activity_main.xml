@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffee58"
+    tools:context="com.korbkenny.todotaketwo.MainActivity">
+
+    <TextView
+        android:id="@+id/theTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GET-IT-DONE"
+        android:contentDescription="Title that reads: Get it done."
+        android:textSize="65sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:textColor="#000"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="14"
+        android:shadowColor="#616161"
+        />
+
+    <Button
+        android:id="@+id/addNewList"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:text="CREATE NEW LIST"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:background="#f06292"
+        android:shadowColor="#ffffff"
+        android:shadowRadius="13"
+        android:shadowDy="0"
+        android:shadowDx="0"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/theTitle"/>
+
+
+    <ListView
+        android:id="@+id/LOLView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/addNewList"/>
+
+    <!--<Button-->
+        <!--android:id="@+id/DestroyButton"-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="destroy a list"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_below="@id/ScrollView"/>-->
+
+</RelativeLayout>
