@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_to_do_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/list_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List Title"
+        android:contentDescription="List title"/>
+
+    <EditText
+        android:id="@+id/list_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name your list"
+        android:layout_below="@id/list_name_label"
+        android:inputType="textCapWords"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Please name your new list"/>
+
+    <TextView
+        android:id="@+id/priority_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_name"
+        android:text="List Priority"
+        android:layout_marginTop="12dp"
+        android:contentDescription="Click to select list priority level"/>
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences"
+        android:hint="Priority Level"
+        android:layout_below="@id/priority_label"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Set the priority level of your list"/>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:text="save"
+        android:contentDescription="Save - click to save your list"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ListRview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/save_button"/>
+
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="clear"
+        android:layout_below="@+id/description"
+        android:layout_toRightOf="@+id/save_button"
+        android:layout_toEndOf="@+id/save_button"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:contentDescription="Clear - click to clear list contents"/>
+
+</RelativeLayout>
