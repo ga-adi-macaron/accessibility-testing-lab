@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TitlePrompt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        android:text="What's the name?"/>
+    <EditText
+        android:id="@+id/EnterTextForNewList2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type the name.">
+        <requestFocus/>
+    </EditText>
+    <TextView
+        android:id="@+id/DescriptPrompt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        android:text="Description"/>
+    <EditText
+        android:id="@+id/EnterTextForItem2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type the description."/>
+
+</LinearLayout>

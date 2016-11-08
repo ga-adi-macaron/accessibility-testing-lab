@@ -1,0 +1,10 @@
+
+Things to change on TO DO LIST:
+
+Title text reads as “get I T done”. Add a content description so it pronounces it correctly.
+
+Alert dialog edit-text shouldn’t read the text decoration asterisks. And the NVM might want to read as never mind.
+
+Alert to add item to list has too many textviews/edittexts to be concise. Going to set the titles to the edit text to be not important for accessibility, then make the edit text hints more descriptive.
+
+Destroy? is vague. Add better description.

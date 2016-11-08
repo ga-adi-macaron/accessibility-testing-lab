@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TitlePrompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEW LIST"
+        android:contentDescription="Name this list textfield."
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:shadowColor="#ffffff"
+        android:shadowRadius="13"
+        android:shadowDy="0"
+        android:shadowDx="0"
+        android:background="#f06292"/>
+    <EditText
+        android:id="@+id/EnterTextForNewList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="* NAME THIS LIST *"
+        android:importantForAccessibility="no"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-condensed"
+        android:background="#ffee58"
+        android:padding="60dp">
+        <requestFocus/>
+    </EditText>
+
+</LinearLayout>
