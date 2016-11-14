@@ -21,3 +21,9 @@ This lab is focused on making sure your apps follow accessibility guidelines. Yo
 
 - A document containing the identified issues
 - An improved version of your app that meets accessibility guidelines.
+
+---
+
+## Licensing
+1. All content is licensed under a CC­BY­NC­SA 4.0 license.
+2. All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact [legal@ga.co](mailto:legal@ga.co).
