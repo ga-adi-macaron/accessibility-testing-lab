@@ -1,0 +1,7 @@
+Accessibility changes made:
+
+1. Added content description to buttons more clearly describing their actions
+
+2. Each new item's content description is set to contain that item's name in the onBindViewHolder
+
+3. Size and contrast recommendations made by accessibility app are extremely small (3 to 5 dp) and have not been modified
